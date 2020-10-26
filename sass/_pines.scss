@@ -1,0 +1,125 @@
+.fondoPines{
+    background-image: url(https://fotos.subefotos.com/e90085d0f9c01202fdbf8c0061d1601ao.jpg);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+ 
+ .headerPines {
+    background-color: darkblue;
+    border: 5px;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-transform: uppercase;
+   
+    .icon {
+      display: none;
+    }
+    
+  
+   a {
+    font-weight: bold;
+    padding-right: 3vh;
+    font-size: 1.8vh;
+    font-family: "Press Start 2P";
+  
+    text-decoration: none;
+    color: aliceblue;
+  
+  }
+}
+
+.titulo-pines{
+    
+    display: flex;
+    margin-top: 1%;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+ 
+        
+      
+        img {
+            max-width: 100%;
+            padding: 1%;
+        }
+        
+
+    
+}
+
+.contenedorPines{
+    
+    background-image: url(https://i.postimg.cc/VN3C5tx9/fondito.png);
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    border: 15px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    padding: 25px;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    div{
+
+    
+        padding: 1%;
+
+        img{
+            width: 70%;
+           
+          
+        }
+    }
+
+    :hover {
+        -ms-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+      }
+}
+
+@media screen and (max-width: 720px) {
+    .headerPines a{
+      font-size: 1vh;
+    }
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .headerPines a{
+      font-size: 1vh;
+    }
+    
+  }
+
+ 
+  
+  @media screen and (max-width: 480px) {
+    .headerPines a{
+      font-size: 1vh;
+    }
+  }
+  
+  @media screen and (max-width: 200px) {
+    .headerPines a{
+      font-size: 1vh;
+    }
+  }

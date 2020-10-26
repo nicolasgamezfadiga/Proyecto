@@ -1,0 +1,138 @@
+
+    
+
+.fondoAnimaciones{
+    background-image: url(https://fotos.subefotos.com/e90085d0f9c01202fdbf8c0061d1601ao.jpg);
+
+}  
+
+.contenedorAnimaciones{
+    
+   
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+
+.headerAnimaciones {
+    background-color: darkblue;
+    border: 5px;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-radius: 5px;
+    width: 100%;
+    height: 10%;
+    padding: 1%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    text-transform: uppercase;
+   
+   
+  
+   a {
+    font-weight: bold;
+    padding-right: 3vh;
+    font-size: 1.8vh;
+    font-family: "Press Start 2P";
+  
+    text-decoration: none;
+    color: aliceblue;
+  
+  }
+  }
+
+.titulo-Animaciones{
+    
+    display: flex;
+    margin-top: 1%;
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+
+      
+        img {
+            max-width: 100%;
+            padding: 1%;
+        }
+        
+
+    
+}
+  .grid-containerAnimaciones {
+    border: 5px;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 15px;
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+    :hover {
+        -ms-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+   div iframe {
+    border: 5px;
+    border-style: solid;
+    border-color: ghostwhite;
+    border-radius: 5px;
+    height: 40vh;
+    width: 40vh;
+
+
+    
+  }
+} 
+
+  
+
+  @media screen and (max-width: 750px) {
+    .grid-containerAnimaciones {
+      grid-template-columns: auto auto;
+    }
+
+    .headerAnimaciones a{
+      font-size: 1vh;
+    }
+   
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .grid-containerAnimaciones {
+      grid-template-columns: auto;
+    }
+
+    .headerAnimaciones a{
+      font-size: 1vh;
+    }
+    
+  }
+  
+  @media screen and (max-width: 480px) {
+    .grid-containerAnimaciones {
+      grid-template-columns: auto;
+    }
+
+    .headerAnimaciones a{
+      font-size: 1vh;
+    }
+    
+  }

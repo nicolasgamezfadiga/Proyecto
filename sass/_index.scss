@@ -1,0 +1,278 @@
+* {
+  box-sizing: border-box;
+}
+
+#pin {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 30%;
+}
+
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Press Start 2P", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 150%;
+  line-height: 1.4;
+}
+
+body {
+  margin: 0;
+}
+
+.contenedor {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column;
+}
+
+.viewport-header {
+  background-color: darkblue;
+  border: 5px;
+  border-style: solid;
+  border-color: ghostwhite;
+  border-radius: 5px;
+  width: 100%;
+  height: 10%;
+  padding: 1%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  text-transform: uppercase;
+ 
+ 
+
+ a {
+  font-weight: bold;
+  padding-right: 3vh;
+  font-size: 70%;
+  font-family: "Press Start 2P";
+
+  text-decoration: none;
+  color: aliceblue;
+
+}
+}
+.viewport-main {
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+ img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 10vh;
+}
+}
+.viewport-footer {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+
+
+ div {
+  display: inline;
+
+
+ a {
+  padding-right: 1vh;
+}
+}
+ :hover {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+}
+}
+/* h1 {
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 0.2vw;
+    display: block;
+    font-size: 1.5vw;
+    text-align: center;
+    padding-bottom: 12vh;
+    span {
+      display: block;
+      font-size: 10vw;
+      letter-spacing: -0.1vw;
+    }
+  }*/
+@media screen and (max-width: 750px) {
+  .viewport-footer {
+   
+    justify-content: center;
+ 
+  }
+  .viewport-header a{
+    font-size: 1vh;
+  }
+  
+  #pin img {
+    display: none;
+  }
+  .viewport-footer div img {
+    height: auto;
+    max-width: 80%;
+    padding-bottom: 1vh;
+  }
+
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+    padding-bottom: 10vh;
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .viewport-footer {
+    justify-content: flex-end;
+  }
+  
+  .viewport-header a{
+    font-size: 1vh;
+  }
+  #pin img {
+    height: auto;
+    max-width: 50%;
+    padding-bottom: 1vh;
+  }
+  .viewport-footer div img {
+    height: auto;
+    max-width: 70%;
+    padding-bottom: 1vh;
+  }
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .viewport-footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .viewport-header a{
+    font-size: 1vh;
+  }
+ 
+  #pin img {
+    display: none;
+  }
+  .viewport-footer div img {
+    height: auto;
+    max-width: 70%;
+
+  }
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+    padding-bottom: 20vh;
+  }
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .viewport-footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .viewport-header a{
+    font-size: 1vh;
+  }
+ 
+  #pin img {
+    display: none;
+  }
+  .viewport-footer div img {
+    height: auto;
+    max-width: 70%;
+
+  }
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+    padding-bottom: 20vh;
+  }
+ 
+}
+
+@media screen and (max-width: 320px) {
+  .viewport-footer {
+    justify-content: center;
+    padding: 0;
+  }
+  .viewport-header a{
+    font-size: 1vh;
+  }
+ 
+  #pin img {
+    display: none;
+  }
+  .viewport-footer div img {
+    height: auto;
+    max-width: 70%;
+
+  }
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+    padding-bottom: 20vh;
+  }
+ 
+}
+
+@media screen and (max-height: 480px) {
+  .viewport-footer {
+    justify-content: flex-end;
+    padding: 0;
+  }
+
+ 
+
+  .viewport-footer {
+    max-width: 30%;
+    padding: 0;
+  }
+  .viewport-footer div img {
+    flex-direction: row;
+    height: auto;
+    max-width: 70%;
+    padding: 0;
+  }
+  .viewport-main img {
+    max-height: 80%;
+    max-width: 80%;
+    padding-bottom: 10vh;
+  }
+  #pin img {
+    height: auto;
+    max-width: 40%;
+    padding-bottom: 1vh;
+  }
+}
